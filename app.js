@@ -14,16 +14,14 @@ sayHello("Hello World!");
 function checkAge(name, age)
 {
     if (age<21){
-        return "Sorry "+name +", you aren't old enough to view the page.";
-    } else {
-        return "Hallo "+name + ", you are older than 21!";
+        alert("Sorry "+name +", you aren't old enough to view the page.");
     }
 }
 
-console.log(checkAge("Charles", 21));
-console.log(checkAge("Abby", 27));
-console.log(checkAge("James", 18));
-console.log(checkAge("John", 17));
+checkAge("Charles", 21);
+checkAge("Abby", 27);
+checkAge("James", 18);
+checkAge("John", 17);
 
 var gemuse = ["Brokkoli", "Zweibeln", "Kartoffeln", "Aubergine", "Knaublauch", "Ingwer"];
 for (gem of gemuse) 
@@ -63,7 +61,7 @@ var objects = [
 
 for (object of objects)
 {
-    console.log(checkAge(object.name, object.age));
+    checkAge(object.name, object.age);
 }
 
 function getLength(word)
